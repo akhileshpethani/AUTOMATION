@@ -20,8 +20,7 @@ public class P010_Userinput {
 		System.out.println("j = "+ i);
 		
 		    
-		    
-		    		
+		 aj.close();   		
 		    		
 	}
 

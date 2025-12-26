@@ -42,7 +42,7 @@ public class P011_Array {
 		} else {
 			System.out.println("not exist");
 		}
-		
+		sc.close();
 	
 		}
 	
