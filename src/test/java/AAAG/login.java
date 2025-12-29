@@ -19,9 +19,9 @@ public class login {
 		WebElement password = driver.findElement(By.id("login_password"));
 		password.sendKeys("Admin@123");
 		
-		WebElement loginbtn = driver.findElement(By.className("btn btn-sm btn-primary btn-block btn-login"));
-		loginbtn.click();
+//		WebElement loginbtn = driver.findElement(By.className("btn btn-sm btn-primary btn-block btn-login"));
+//		loginbtn.click();
 		
 	}
-
+	
 }
