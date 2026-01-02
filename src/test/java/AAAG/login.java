@@ -14,13 +14,17 @@ public class login {
 		WebDriver driver = DriverConnection.getDriver(url);
 		
 		WebElement email = driver.findElement(By.id("login_email"));
-		email.sendKeys("janak@pseudcoocode.co");
+		email.sendKeys("administrator");
 		
 		WebElement password = driver.findElement(By.id("login_password"));
 		password.sendKeys("Admin@123");
 		
-//		WebElement loginbtn = driver.findElement(By.className("btn btn-sm btn-primary btn-block btn-login"));
-//		loginbtn.click();
+		WebElement loginbtn = driver.findElement(By.xpath("//*[@id=\"page-login\"]/div/main/div[2]/div/section[1]/div/form/div[2]/button"));
+		loginbtn.click();
+		
+//		WebElement salesorder = driver.findElement(By.xpath("//div[@class='codex-editor']/div[1]/div[13]/div[1]"));
+//		salesorder.click();
+		
 		
 	}
 	

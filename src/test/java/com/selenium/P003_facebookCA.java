@@ -1,5 +1,7 @@
 package com.selenium;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 
 import org.openqa.selenium.WebDriver;
@@ -41,8 +43,8 @@ public class P003_facebookCA {
 		WebElement gender = driver.findElement(By.name("sex"));
 		gender.click();
 		
-//		List<WebElement> gender = driver.findElements(By.name("sex"));
-//		gender.get(1).click();
+		List<WebElement> gender1 = driver.findElements(By.name("sex"));
+		gender1.get(1).click();
 		
 //		WebElement Gender = driver.findElement(By.name("sex"));
 //		Gender.click();
