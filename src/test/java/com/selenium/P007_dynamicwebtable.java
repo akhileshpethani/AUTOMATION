@@ -23,11 +23,19 @@ public class P007_dynamicwebtable {
 			WebElement text = driver.findElement(By.xpath("//div[@class='web-tables-wrapper']/div[3]/div[1]/div[1]/div/div["+ i +"]/div[1]"));
 			System.out.print(text.getText()+ " ");
 		
-			
 		}
-		
-		
-		
+		System.out.println();
+		List <WebElement> title1 = driver.findElements(By.xpath("//div[@class='web-tables-wrapper']/div[3]/div[1]/div[2]/div"));
+		for (int i = 1; i <= 3; i++) {
+			List<WebElement> data = driver.findElements(
+					By.xpath("//div[@class='web-tables-wrapper']/div[3]/div[1]/div[2]/div[" + i + "]/div/div"));
+			for (int j = 1; j <= data.size(); j++) {
+				WebElement text = driver.findElement(By.xpath(
+						"//div[@class='web-tables-wrapper']/div[3]/div[1]/div[2]/div[" + i + "]/div/div[" + j + "]"));
+				System.out.print(text.getText() + " ");
+			}
+		System.out.println();
+	}
 	}
 	
 
