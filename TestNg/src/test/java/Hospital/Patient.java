@@ -9,7 +9,7 @@ public class Patient {
 		System.out.println("patient create account");
 	}
 
-	@Test
+	@Test(groups = "checkUPI")
 	public void login() {
 		System.out.println("patient login");
 	}
